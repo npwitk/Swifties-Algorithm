@@ -5,6 +5,7 @@ func mergeSort<Element: Comparable>(_ array: [Element]) -> [Element] {
     guard array.count > 1 else {
         return array
     }
+    
     let middle = array.count / 2
     
     let left = mergeSort(Array(array[..<middle]))
